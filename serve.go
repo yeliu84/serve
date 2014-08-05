@@ -15,22 +15,22 @@ __copyright__: Copyright (c) 2014 Ye Liu
 package main
 
 import (
-    "log"
-    "net"
-    "net/http"
-    "os"
+	"log"
+	"net"
+	"net/http"
+	"os"
 )
 
 const (
-    HOST = "localhost"
-    DEFAULT_PORT = "9000"
+	HOST         = "localhost"
+	DEFAULT_PORT = "9000"
 )
 
 func main() {
-    port := DEFAULT_PORT
-    if (len(os.Args) > 1) {
-        port = os.Args[1]
-    }
-    log.Printf("Starting server on %s port %s ...\n", HOST, port)
-    log.Fatal(http.ListenAndServe(net.JoinHostPort(HOST, port), http.FileServer(http.Dir("."))))
+	port := DEFAULT_PORT
+	if len(os.Args) > 1 {
+		port = os.Args[1]
+	}
+	log.Printf("Starting server on %s port %s ...\n", HOST, port)
+	log.Fatal(http.ListenAndServe(net.JoinHostPort(HOST, port), http.FileServer(http.Dir("."))))
 }
