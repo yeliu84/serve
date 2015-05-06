@@ -1,18 +1,16 @@
-/*
-Serve - Simple HTTP File Server
-
-Usage: serve [port]
-    port is optional, default 9000
-
-
-__version__:   1.0.0
-__license__:   MIT
-__author__:    Ye Liu
-__contact__:   yeliu@instast.com
-__copyright__: Copyright (c) 2014 Ye Liu
-*/
-
 package main
+
+// Serve - Simple HTTP File Server
+//
+// Usage: serve [port]
+//     port is optional, default 9000
+//
+//
+// Version:   1.0
+// License:   MIT
+// Author:    Ye Liu
+// Contact:   yeliu@instast.com
+// Copyright: Copyright (c) 2015 Ye Liu
 
 import (
 	"log"
